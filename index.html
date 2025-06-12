@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Olasunkanmi | Portfolio</title>
 </head>
@@ -11,7 +12,7 @@
     <header class="main-header">
         <div class="logo">Portfolio</div>
         <input type="checkbox" name="menu-button" id="menu-button" class="menu-button">
-        <label for="menu-button">
+        <label for="menu-button" class="menu-container">
             <span class="hamburger"></span>
         </label>
         <nav class="nav">
@@ -27,11 +28,106 @@
     <!-- header section ends  -->
     <!-- intro section start -->
      <section class="intro" id="home">
-        <h1 class="section__title" class="section__title--intro">Hello, <strong>I am olasunkanmi</strong></h1>
-        <p class="section__subtitle" class="section__subtitle--intro">Frontend Developer</p>
+        <h1 class="section__title section__title--intro">Hello, <strong>I am olasunkanmi</strong></h1>
+        <p class="section__subtitle section__subtitle--intro">Frontend Developer</p>
         <span class="section__subtitle--design">Designer</span>
         <img src="imgs/african.jpg" alt="african" class="intro__img">
      </section>
     <!-- intro section ends -->
+     <!-- my services start -->
+      <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I Do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>UI/UX</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestias nisi laborum aspernatur tenetur eligendi.</p>
+            </div>
+            <div class="service">
+                <h3>Frontend</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste tempora error mollitia commodi soluta excepturi.</p>
+            </div>
+            <div class="service">
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo accusantium debitis odio maiores ipsa illum!</p>
+            </div>
+            <div class="service">
+                <h3>Graphics Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam beatae, quos quia voluptatibus veritatis eligendi.</p>
+            </div>
+        </div>
+        <a href="#work" class="btn">My Project</a>
+      </section>
+      <!-- My services end -->
+       <!-- About me start -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I Am</h2>
+            <p class="section__subtitle section__subtitle--about">Frontend Developer And Designer Based In Port-harcourt</p>
+            <div class="about__body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus alias natus eveniet excepturi, ad ullam odit amet voluptatum incidunt! Doloribus quos adipisci fuga temporibus tempora, laborum amet earum nesciunt architecto!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reiciendis optio doloribus consectetur aspernatur nostrum. Modi blanditiis reiciendis laborum dolorum.</p>
+            </div>
+            <img src="imgs/pho.jpg" alt="woman" class="about-me__img">
+        </section>
+        <!-- about me ends -->
+         <!-- my work starts -->
+          <section class="my-work" id="project">
+            <h2 class="section__title">My project</h2>
+            <p class="section__subtitle section__subtitle--work"> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <div class="portfolio">
+                <div class="portfolio__item">
+                    <h3 class="section__title--portfolio">UI Design</h3>
+                    <p class="section__subtitle--portfolio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn btn--portfolio" target="_blank">View Project</a>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="section__title--portfolio">Frontend Developer</h3>
+                    <p class="section__subtitle--portfolio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn btn--portfolio" target="_blank">View Project</a>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="section__title--portfolio">Hair Stylist</h3>
+                    <p class="section__subtitle--portfolio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn btn--portfolio" target="_blank">View Project</a>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="section__title--portfolio">Backend Developer</h3>
+                    <p class="section__subtitle--portfolio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn btn--portfolio" target="_blank">View Project</a>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="section__title--portfolio">UI Design</h3>
+                    <p class="section__subtitle--portfolio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn btn--portfolio" target="_blank">View Project</a>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="section__title--portfolio">Fashion Designer</h3>
+                    <p class="section__subtitle--portfolio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn btn--portfolio" target="_blank">View Project</a>
+                </div>
+            </div>
+          </section>
+          <!-- scroll to the top icon -->
+          <button id="scrollToTopBtn" onclick="scrollToTop()" type="button"><i class="fa-solid fa-arrow-up"></i></button>
+          <!-- footer start -->
+           <footer class="footer">
+            <a href="mailto:ifeoluwaprecious92@gmail.com" class="footer-link">ifeoluwaprecious92@gmail.com</a>
+
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a href="#" class="social-list__link"><i class="fa-brands fa-behance"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a href="#" class="social-list__link"><i class="fa-brands fa-codepen"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a href="#" class="social-list__link"><i class="fa-brands fa-dribbble"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a href="#" class="social-list__link"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+           </footer>
+           <script src="js/index.js"></script>
+           
 </body>
 </html>
